@@ -5,11 +5,12 @@ const clock = () => {
     let seconds = date.getSeconds();
     let formate = "AM";
 
-    hours = hours === 0 ? 12 : hours;
+   
     if(hours > 10){
         hours = hours - 12;
         formate = "pm";
     }
+    hours = hours === 0 ? 12 : hours;
 
     hours = hours < 10 ? "0" + hours : hours;
     minutes = minutes < 10 ? "0" + minutes : minutes;
